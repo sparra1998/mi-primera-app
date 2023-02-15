@@ -16,7 +16,7 @@ body{
     background-color: var(--grisclaro);
 }
 .encabezado{
-    background-color: var(--purple);
+    background-color: rgba(154, 129, 236, 0.841);
     display:  flex;
     text-align: center;
     padding: 15px;
