@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:roboto;
+
+    ;}
+    :root{
+        --lightgray:#E3DFDE;
+        --purple:#9350B1;
+        --ligthpurple:#F8E4F5;
+}
+body{
+    background-color: var(--grisclaro);
+}
+.encabezado{
+    background-color: var(--purple);
+    display:  flex;
+    text-align: center;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 15px 15px 0 0;
+}
+.encabezado figure img{
+    width: 50px;
+}
+.encabezado h1{
+    text-transform: uppercase;
+    color: white;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    background-color: var(--ligthpurple);
+}
+.charizard-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+
+}
+.title{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+.title figure img{
+    width: 50px;
+    height: 50px;
+    
+}
+.img-charizard img{
+    width: 100%;
+    object-fit: cover;
+}
+.info-pokemon{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 15px;
+    width: 40%;
+    gap: 20px;
+}
+.row-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.row-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-info{
+    font-size: 20px;
+    color: var(--purple);
+    font-weight: 900;
+}
+.info-text{
+    font-size: 24px;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
+.footer-container figure img{   
+width: 100px;
+height: 100px;
+object-fit: contain;
+
+}
+.footer-container figure{
+    padding: 15px;
+    background-color: var(--ligthpurple);
+    border-radius: 10px;
+    margin: 10px;
+
+}
+.footer-container div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 65%;
+}
+@media screen and (max-width: 700px  ) {
+    .encabezado{
+        justify-content: center;
+    }
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .charizard-container{
+        width: 90%;
+        z-index: 2;
+    }
+    .info-pokemon{
+        width: 85%;
+        height: 60vh;
+        transform: translateY(-100px);
+        z-index: 1;
+    }
+    .pokeball{
+        display: none;
+    }
+}
